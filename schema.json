@@ -221,7 +221,7 @@
 					"type": "string",
 					"pattern": "^(\\w{2,10}\\{[^}]*\\}|dynamic|null)$",
 					"minLength": 4,
-					"maxLength": 100
+					"maxLength": 1000
 				},
 				{
 					"type": "array",
@@ -231,7 +231,7 @@
 								"type": "string",
 								"pattern": "^(\\w{2,10}\\{[^}]*\\}|dynamic|null)$",
 								"minLength": 4,
-								"maxLength": 100
+								"maxLength": 1000
 							},
 							{
 								"type": "object",
@@ -243,7 +243,7 @@
 										"type": "string",
 										"pattern": "^(\\w{2,10}\\{[^}]*\\}|dynamic|null)$",
 										"minLength": 4,
-										"maxLength": 100
+										"maxLength": 1000
 									},
 									"case_sensitive": {
 										"type": "boolean",
