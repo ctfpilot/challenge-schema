@@ -131,6 +131,10 @@
 			"description": "The type of instanced challenge.\nDefines how users interact with the challenge."
 		},
 		"instanced_name": {
+			"description": "The slug of the instanced challenge. This is applicable if the `type` is `instanced` and another instance is used instead of itself. May also be itself to specify that the challenge is instanced but does not use another instance.",
+			"examples": [
+				"example-challenge"
+			],
 			"oneOf": [
 				{
 					"type": "null"
@@ -138,11 +142,7 @@
 				{
 					"type": "string",
 					"default": null,
-					"description": "The slug of the instanced challenge. This is applicable if the `type` is `instanced` and another instance is used instead of itself. May also be itself to specify that the challenge is instanced but does not use another instance.",
 					"pattern": "^[a-z0-9-]+$",
-					"examples": [
-						"example-challenge"
-					],
 					"minLength": 1,
 					"maxLength": 50
 				}
