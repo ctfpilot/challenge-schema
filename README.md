@@ -95,7 +95,8 @@ These are the explicit allowed values used by the schema and tooling.
   - `context` (string) - build context directory
   - `location` (string) - path to the Dockerfile
   - `identifier` (string | null, optional) - optional label identifying the image
-- `handout_dir` (string, optional) - directory with handout files.
+- `handout_dir` (string, optional) - directory with handout files. Default: `handout`.
+- `zip` (boolean, optional) - whether `handout_dir` contents are zipped into a single `<category>_<slug>.zip` before upload. Default: `true`.
 
 ## Flags
 

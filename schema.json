@@ -333,12 +333,17 @@
 		},
 		"handout_dir": {
 			"type": "string",
-			"description": "The location of the handout directory relative to the challenge directory. Handout directory contains all files that are handed out to users (zipped to a single file that are stored in <category>_<slug>.zip in the files directory).",
+			"description": "The location of the handout directory relative to the challenge directory. Handout directory contains all files that are handed out to users (zipped to a single file that are stored in <category>_<slug>.zip in the files directory, unless `zip` is set to false).",
 			"default": "handout",
 			"pattern": "^[a-zA-Z0-9-_\/]+$",
 			"examples": [
 				"handout"
 			]
+		},
+		"zip": {
+			"type": "boolean",
+			"default": true,
+			"description": "Whether the contents of `handout_dir` should be zipped into a single `<category>_<slug>.zip` file before being uploaded to CTFd. If false, the files in `handout_dir` (including subdirectories) are uploaded individually instead."
 		}
 	}
 }
